@@ -1,0 +1,50 @@
+    
+    /**
+        UO278036
+    */
+    
+    /* Especificidad -> (0,0,1) */
+    body {    
+        color: #353535;
+        background-color:white;
+        line-height: 1.4;
+
+        font: 1.4em Palatino,serif ;
+        border-radius: 1em;
+        }
+
+    footer{
+                
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0.75em;
+
+        background-color: #4e7c9c;
+        color: black;              
+    }
+    /* Especificidad -> (0,0,1) */
+    h1{
+        color: white;
+        background-color: #4e7c9c;
+        text-align: center;
+        font-size: xx-large;
+    }
+    /* Especificidad -> (0,0,1) */
+    h2{
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0.45em;  
+
+        color: black;
+        background-color:#4e7c9c;
+    }
+    /* Especificidad -> (0,0,1) */
+    section, article{
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0.45em;
+        border-width: 0.2em;
+
+        color: black;
+        background-color:#c6c6c6;
+    }
