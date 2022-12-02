@@ -12,7 +12,7 @@ class Meteo {
 			url: this.url,
 			method: 'GET',
 			success: function(datos){
-				var stringDatos = "<h2>Datos de Laviana desde <a href='https://openweathermap.org'>OpenWeatherMap</a></h2>";
+				var stringDatos = "<h2>Datos de " +datos.name + "</h2>";
 					stringDatos += "<ul><li><img src=https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png"+ " alt=IconoTiempo" +"></li>";
 					stringDatos += "<li>Ciudad: " + datos.name + "</li>";
 					stringDatos += "<li>País: " + datos.sys.country + "</li>";
