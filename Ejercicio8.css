@@ -48,3 +48,16 @@
         color: black;
         background-color:#c6c6c6;
     }
+
+    /* Especificidad -> (0,0,1) */
+    input[type=button]{
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0.45em;
+        border-width: 0.2em;
+
+        margin: 0.45em;
+        
+        color: black;
+        background-color:#c6c6c6;
+        }
