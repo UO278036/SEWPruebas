@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Raúl Fernández España">
+    <meta name="description" content="Ventajas y descentajas sobre Ruby">
+    <meta name="keywords" content="Tiempo, Localización, Lluvia">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio9.css"> 
+</head>
+
+<body>
+	<h1>Ejercicio 9 - El tiempo</h1>
+	
+	
+	<h2>Datos de Oviedo desde <a href="https://openweathermap.org">OpenWeatherMap</a></h2><h3>¡Todo correcto!</h3><div></div><h4>Datos</h4><p><ul><li><img src="https://openweathermap.org/img/w/03n.png" alt="IconoTiempo"></li><li>Número de elementos del XML: 19</li><li>Ciudad: Oviedo</li><li>Longitud: -5.8448 grados</li><li>Latitud: 43.3603 grados</li><li>País: ES</li><li>Amanece a las: 8:37:06</li><li>Oscurece a las: 17:48:46</li><li>Temperatura: 4.08 grados Celsius</li><li>Temperatura mínima: 3.74 grados Celsius</li><li>Temperatura máxima: 8.49 grados Celsius</li><li>Temperatura (unidades): celsius</li><li>Humedad: 95 %</li><li>Presión: 1017 hPa</li><li>Velocidad del viento: 0.45 metros/segundo</li><li>Nombre del viento: Calm</li><li>Dirección del viento: 75 grados</li><li>Código del viento: ENE</li><li>Nombre del viento: East-northeast</li><li>Nubosidad: 30</li><li>Nombre nubosidad: scattered clouds</li><li>Visibilidad: 10000 metros</li><li>Precipitación valor: undefined</li><li>Precipitación modo: no</li><li>Descripción: nubes dispersas</li><li>Hora de la medida: 1:43:55</li><li>Fecha de la medida: 2/12/2022</li></ul></p><button id="botonOviedo" onclick="meteo.verOviedo()">Ver tiempo en Oviedo</button>
+	<button id="botonLaviana" onclick="meteo.verLaviana()">Ver tiempo en Laviana</button>
+	<button id="botonFelguera" onclick="meteo.verFelguera()">Ver tiempo en la Felguera</button>
+	<button id="botonVigo" onclick="meteo.verVigo()">Ver tiempo en Vigo</button>
+	<button id="botonLeon" onclick="meteo.verLeon()">Ver tiempo en Leon</button>
+
+
+		<footer>
+			
+			<img src="multimedia/HTML5.png" alt=" HTML5 Válido!">
+			<img src="multimedia/CSS3.png" alt="CSS Válido!">
+		</footer>
+
+
+</body></html>
