@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+        <!-- Datos que describen el documento -->
+        <meta charset="UTF-8">
+
+        <!--Metadatos de los documentos HTML5-->
+        <meta name="author" content="Raúl Fernández España">
+        <meta name="description" content="Precio de la luz en España">
+        <meta name="keywords" content="Luz, Precio, electricidad">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electricidad</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Ejercicio10.js"></script>
+        <link rel="stylesheet" type="text/css" href="Ejercicio10.css"> 
+    </head>
+
+    <body>
+        <h1>
+            Calculadora del precio de la electricidad en España
+        </h1>
+        
+        <article>
+            <h2>
+                Instrucciones de uso de la hemeroteca eléctrica
+            </h2>
+            <p>
+                Bienvenido a la hemeroteca de precios de la electricidad en España
+                introduzca el día del que desea conocer el precio.
+            </p>
+
+            <p>
+                Debido a los registros gubernamentales las fechas solicidas deben estar entre el 01/01/2014 y el día de hoy. 
+            </p>
+        </article>
+        <section>
+            <h2>
+                Solicitud de precios:
+            </h2>
+            <p> Quiero calcular el precio de la electricidad del día: 
+                <label for="fecha" hidden=""> Calendario fechas</label>
+                <input type="date" id="fecha">
+            
+            
+                <input type="button" value="Obtencion precios" onclick="electricidad.getPrecios()">
+            </p>
+            
+            <p>
+                <label for="result">Precio en MWh: </label>
+                <input type="text" id="result" disabled="">
+            </p>
+        
+            
+        </section><section> <h3> Precios mercado peninsular en tiempo real </h3><ul> <li> DIA [2022-12-02] HORA [00:00h]  PRECIO: 279.07 € </li><li> DIA [2022-12-02] HORA [01:00h]  PRECIO: 281.67 € </li><li> DIA [2022-12-02] HORA [02:00h]  PRECIO: 282.55 € </li><li> DIA [2022-12-02] HORA [03:00h]  PRECIO: 287.80 € </li><li> DIA [2022-12-02] HORA [04:00h]  PRECIO: 289.22 € </li><li> DIA [2022-12-02] HORA [05:00h]  PRECIO: 293.89 € </li><li> DIA [2022-12-02] HORA [06:00h]  PRECIO: 290.26 € </li><li> DIA [2022-12-02] HORA [07:00h]  PRECIO: 295.79 € </li><li> DIA [2022-12-02] HORA [08:00h]  PRECIO: 313.02 € </li><li> DIA [2022-12-02] HORA [09:00h]  PRECIO: 282.32 € </li><li> DIA [2022-12-02] HORA [10:00h]  PRECIO: 298.70 € </li><li> DIA [2022-12-02] HORA [11:00h]  PRECIO: 289.03 € </li><li> DIA [2022-12-02] HORA [12:00h]  PRECIO: 293.35 € </li><li> DIA [2022-12-02] HORA [13:00h]  PRECIO: 319.97 € </li><li> DIA [2022-12-02] HORA [14:00h]  PRECIO: 267.63 € </li><li> DIA [2022-12-02] HORA [15:00h]  PRECIO: 256.03 € </li><li> DIA [2022-12-02] HORA [16:00h]  PRECIO: 294.92 € </li><li> DIA [2022-12-02] HORA [17:00h]  PRECIO: 339.65 € </li><li> DIA [2022-12-02] HORA [18:00h]  PRECIO: 404.08 € </li><li> DIA [2022-12-02] HORA [19:00h]  PRECIO: 403.72 € </li><li> DIA [2022-12-02] HORA [20:00h]  PRECIO: 404.32 € </li><li> DIA [2022-12-02] HORA [21:00h]  PRECIO: 398.78 € </li><li> DIA [2022-12-02] HORA [22:00h]  PRECIO: 346.03 € </li><li> DIA [2022-12-02] HORA [23:00h]  PRECIO: 350.95 € </li></ul><p>Precio de la electricidad: 315.11€ </p></section>
+        
+        <footer>
+			<p>Por Raúl Fernández España, UO278036</p>
+			<img src="multimedia/HTML5.png" alt=" HTML5 Válido!">
+			<img src="multimedia/CSS3.png" alt="CSS Válido!">
+		</footer>
+    
+</body></html>

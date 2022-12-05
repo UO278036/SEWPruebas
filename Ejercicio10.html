@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html lang = "es">
+    <head>
+        <!-- Datos que describen el documento -->
+        <meta charset="UTF-8" />
+
+        <!--Metadatos de los documentos HTML5-->
+        <meta name ="author" content ="Raúl Fernández España" />
+        <meta name ="description" content ="Precio de la luz en España" />
+        <meta name ="keywords" content ="Luz, Precio, electricidad" />
+
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+        <title>Electricidad</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Ejercicio10.js"></script>
+        <link rel="stylesheet" type="text/css" href="Ejercicio10.css" /> 
+    </head>
+
+    <body>
+        <h1>
+            Calculadora del precio de la electricidad en España
+        </h1>
+        
+        <article>
+            <h2>
+                Instrucciones de uso de la hemeroteca eléctrica
+            </h2>
+            <p>
+                Bienvenido a la hemeroteca de precios de la electricidad en España
+                introduzca el día del que desea conocer el precio.
+            </p>
+
+            <p>
+                Debido a los registros gubernamentales las fechas solicidas deben estar entre el 01/01/2014 y el día de hoy. 
+            </p>
+        </article>
+        <section>
+            <h2>
+                Solicitud de precios:
+            </h2>
+            <p> Quiero calcular el precio de la electricidad del día: 
+                <label for="fecha" hidden> Calendario fechas</label>
+                <input type="date" id="fecha"/>
+            
+            
+                <input type="button" value="Obtencion precios" onClick = "electricidad.getPrecios()" />
+            </p>
+            
+            <p>
+                <label for="result">Precio en MWh: </label>
+                <input type="text" id="result" disabled />
+            </p>
+        
+            
+        </section>
+        
+        <footer>
+			<p>Por Raúl Fernández España, UO278036</p>
+			<img src="multimedia/HTML5.png" alt=" HTML5 Válido!" />
+			<img src="multimedia/CSS3.png"  alt="CSS Válido!"  />
+		</footer>
+    </body>
+</html>
