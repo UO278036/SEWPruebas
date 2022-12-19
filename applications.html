@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Raúl Fernandez España" />
+    <meta name="description" content="Tienda de Ropa">
+    <meta name="keywords" content="Tienda,Ropa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ejercicio 7</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
+</head>
+
+
+
+
+<body>
+
+    <h1>Ejercicio 7 - Compra de Ropa</h1>
+
+    <nav>
+        <a title="Añadir producto a la cesta" accesskey="A" tabindex="1" href="#añadirProducto">Añadir ropa a la
+            cesta</a>
+        <a title="Crear perfil de cliente" accesskey="C" tabindex="2" href="#crearPerfilCliente">Añadir cliente</a>
+        <a title="Buscar datos" accesskey="B" tabindex="3" href="#buscarProducto">Buscar ropa en la cesta</a>
+        <a title="Modificar cantidad de producto" accesskey="M" tabindex="4" href="#modificarCantidadProducto">Modificar
+            cantidad de
+            ropa</a>
+        <a title="Borrar producto" accesskey="E" tabindex="5" href="#borrarProducto">Borrar ropa de pedido</a>
+        <a title="Generar factura" accesskey="G" tabindex="6" href="#generarFactura">Generar factura</a>
+    </nav>
+
+
+
+    <section> <a id="añadirProducto"></a>
+        <h2>Añadir ropa a la cesta</h2>
+        <p>Rellene los siguientes datos y una vez completados pulse el botón para añadir ropa cesta.
+        </p>
+        <form action='#' name='añadirProducto' method='post'>
+            <p>
+                <label for="txtCodigo"> Código: </label>
+                <input id="txtCodigo" type="text" name="codigo_ropa" />
+            </p>
+            <p>
+                <label for="txtNombre"> Nombre de la prenda: </label>
+                <input id="txtNombre" type="text" name="nombre_ropa" />
+            </p>
+            <p>
+                <label for="txtPrecio"> Precio: </label>
+                <input id="txtPrecio" type="number" name="precio_ropa" />
+            </p>
+            <p>
+                <label for="txtCantidad"> Cantidad: </label>
+                <input id="txtCantidad" type="number" name="cantidad_ropa" />
+            </p>
+            <p>
+                <label for="txtDescripcion"> Descripción: </label>
+                <input id="txtDescripcion" type="text" name="descripcion_ropa" />
+            </p>
+            <p>
+                <input id='botonAñadirProducto' type='submit' name='botonAñadirProducto' value='Añadir producto' />
+            </p>
+        </form>
+    </section>
+
+    <section> <a id="crearPerfilCliente"></a>
+        <h2>Añadir cliente</h2>
+        <p>Rellene los siguientes datos y una vez completados pulse el botón para crear un nuevo perfil de cliente.</p>
+        <form action='#' name='crearPerfilCliente' method='post'>
+            <p>
+                <label for="txtCodigoCliente"> ID de cliente: </label>
+                <input id="txtCodigoCliente" type="text" name="codigo_cliente" />
+            </p>
+            <p>
+                <label for="txtNombreApellidos"> Nombre y apellidos: </label>
+                <input id="txtNombreApellidos" type="text" name="datos_cliente) " />
+            </p>
+            <p>
+                <input id='botonCrearPerfilCliente' type='submit' name='botonCrearPerfilCliente'
+                    value='Crear perfil cliente' />
+            </p>
+        </form>
+    </section>
+
+    <section> <a id="buscarProducto"></a>
+        <h2>Buscar producto en la cesta</h2>
+        <p>Introduzca el código de la prenda y pulse el botón para que se muestre la información.</p>
+        <form name='buscarProducto' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="codigoBuscar"> Código: <input id="codigoBuscar" type="text" name="codigoBuscar" /> </label>
+                <input id='botonBuscarProducto' type='submit' name='botonBuscarProducto' value='Buscar producto' />
+            </fieldset>
+        </form>
+    </section>
+
+    <section> <a id="modificarCantidadProducto"></a>
+        <h2>Modificar cantidad de una prenda</h2>
+        <p>Introduzca el código de la prenda que desea modificar y la nueva cantidad que desea.</p>
+        <form name='modificarCantidadProducto' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <p>
+                    <label for="txtCodigoAModificar">Código de la prenda:<input id="txtCodigoAModificar" type="text"
+                            name="codigoParam" />
+                    </label>
+                </p>
+                <p>
+                    <label for="cantidadModificada"> Nueva cantidad: <input id="cantidadModificada" type="number"
+                            name="cantidadModificada" /></label>
+                </p>
+
+                <input id='botonModificarCantidadProducto' type='submit' name='botonModificarCantidadProducto'
+                    value='Modificar cantidad de producto' />
+            </fieldset>
+        </form>
+    </section>
+
+    <section> <a id="borrarProducto"></a>
+        <h2>Borrar prenda del pedido</h2>
+        <p>Introduzca el código y pulse el botón para eliminar la prenda del pedido.</p>
+        <form name='borrarProducto' method='post' action="Ejercicio7.php">
+            <fieldset>
+                <label for="codigoBorrar"> Código: <input id="codigoBorrar" type="text" name="codigoBorrar" /> </label>
+                <input id='botonBorrarProducto' type='submit' name='botonBorrarProducto' value='Borrar producto' />
+            </fieldset>
+        </form>
+    </section>
+
+    <section> <a id="importarDatos"></a>
+        <h2>Importar datos desde un fichero CSV</h2>
+        <p>Seleccione el archivo CSV</p>
+        <form name='importarDatos' action='#' method='post'>
+            <fieldset>
+                <label for="archivoACargar">Selecciona que desea cargar<input id='archivoACargar' type='file'
+                        name='archivoACargar' /></label>
+                <input id='botonImportarDatos' type='submit' name='botonImportarDatos' value='Importar datos' />
+            </fieldset>
+        </form>
+    </section>
+
+    <section> <a id="generarFactura"></a>
+        <h2>Generar factura</h2>
+        <p> Introduzca su identificador de cliente y el identificador de la tienda de su compra.</p>
+        <form name='generarFactura' action='#' method='post'>
+            <p>
+                <label for="txtIDCliente"> Identificador de cliente: </label>
+                <input id="txtIDCliente" type="text" name="codigo_cliente" />
+            </p>
+            <p>
+                <label for="txtIDAlmacen"> Identificador de la tienda: </label>
+                <input id="txtIDAlmacen" type="text" name="idAlmacen" />
+            </p>
+            <fieldset>
+                <input id='botonGenerarFactura' type='submit' name='botonGenerarFactura' value='Generar factura' />
+            </fieldset>
+        </form>
+    </section>
+
+
+    
+
+</body>
+
+</html>
